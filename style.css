@@ -62,15 +62,17 @@
 .listItem {
     box-sizing: border-box;
     position: relative;
-    height: 298px;
     border-bottom: 1px solid #F0F0F1;
-    margin-top: 40px;
+    padding: 24px 0 30px 24px;
 }
 
 /* div for image and product info used for alignment*/
 .imageProdInfo {
     display: flex;
     flex-direction: row;
+    position: relative;
+    /* margin-left: 32px;
+    margin-top: 24px; */
 }
 
 /* sub div for list item to maintain display  */
@@ -84,6 +86,7 @@
 .iphoneImg {
     position: relative;
     margin-left: 32px;
+    margin-right: 24px;
 }
 
 /* Product Info */
@@ -91,9 +94,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    margin-left: 32px;
+    padding-left: 25px;
+    /* gap: 8px; */
+    /* margin-top: 24px; */
 }
 
 /* Item Name */
@@ -141,10 +144,7 @@
 .starIcon {
     width: 14px;
     height: 14px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
+    margin-bottom: 2px;
 }
 
 /* Reviews & Ratings */
@@ -155,9 +155,7 @@
     padding: 0px;
     gap: 4px;
     height: 18px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    margin-top: 17px;
 }
 
 /* Rating count */
@@ -187,6 +185,8 @@
 .pricingInfo {
     display: flex;
     flex-direction: column;
+    margin-right: 200px;
+    /* margin-top: 46px;  */
 }
 
 /* original price  */
@@ -253,7 +253,9 @@
 .checkbox {
     margin-top: 5px;
     margin-left: 32px;
-    position: relative;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
     font-size: 12px;
     width: max-content;
 }
@@ -367,12 +369,11 @@
 .layoutBtm {
     height: max-content;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    display: flex;
+    align-items: center;
     margin-left: 8px;
 }
 
@@ -382,7 +383,7 @@
     bottom: 8px;
     position: fixed;
     color: #3F72E9;
-    padding: 15px;
+    padding-bottom: 20px;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -395,11 +396,12 @@
 .imageDiv {
     display: flex;
     flex-direction: row;
+    padding-bottom: 35px;
 }
 
 .imageComboDiv {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .cancel_img {
@@ -410,22 +412,33 @@
     line-height: 1;
 }
 
+.cancelImgDiv {
+    margin-top: 8px;
+}
+
 .close {
-    position: relative;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 107px;
     width: 30px;
-    height: 30px;
-    opacity: 0.3;
-    display: block;
-    background-color: transparent;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #878787;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
 }
 
 .close:hover {
     opacity: 1;
+    color: #000000;
 }
 
 .close:before,
 .close:after {
-    position: absolute;
+    position: relative;
     left: 15px;
     content: ' ';
     height: 33px;
@@ -452,18 +465,63 @@
 .btnDiv {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     right: auto;
     position: relative;
-    float: right;
+    justify-content: right;
 }
 
 .cmpButton {
     background-color: #2874f0;
     transition: background-color .2s ease-in;
+    border-radius: 2px;
+    color: #f0f0f0;
     border: none;
-    padding: 12px 14px;
     float: right;
+    position: absolute;
+    display: block;
+    margin-top: 12px;
+    bottom: 8px;
+    right: 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 144px;
+    text-decoration: none;
+}
+
+/* .compareDiv > div {
+    display: none;
+    padding: 0;
+    margin: 0;
+} */
+
+/* #compareDiv > div:target {
+    display: block;
+}
+
+#compareDiv > div[compareBtn]:target {
+    content: attr(id);
+} */
+
+.cmpButton:hover .compareDiv {
+    display: block;
+}
+
+.cmpText {
+    color: #f0f0f0;
+    padding-left: 24px;
+    line-height: 2.5;
+}
+
+.numOfProducts {
+    margin-left: 12px;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 2px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
 }
 
 .remButton {
@@ -472,8 +530,8 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
+    line-height: 1;
+    margin-right: 160px ;
 }
 
 .btmName {
@@ -484,6 +542,7 @@
     text-overflow: ellipsis;
     text-align: center;
     color: #212121;
+    width: 100px;
 }
 
 .btmImg {
