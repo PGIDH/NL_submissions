@@ -1,0 +1,551 @@
+/* Header */
+.header {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background: #3F72E9;
+}
+
+/* flipkart logo */
+.vector {
+    width: 88.8px;
+    height: auto;
+}
+
+/* search bar */
+.srchRect {
+    width: 507px;
+    height: 40px;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-indent: 8px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    background: #FFFFFF;
+}
+
+/* become a seller option  */
+.seller {
+    margin-right: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/* view cart on header  */
+.cart {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.body {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    background: #FFFFFF;
+    margin: 0px;
+}
+
+/* List Item */
+.listItem {
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #F0F0F1;
+    padding: 24px 0 30px 24px;
+}
+
+/* div for image and product info used for alignment*/
+.imageProdInfo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* margin-left: 32px;
+    margin-top: 24px; */
+}
+
+/* sub div for list item to maintain display  */
+.subProd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* iphone image  */
+.iphoneImg {
+    position: relative;
+    margin-left: 32px;
+    margin-right: 24px;
+}
+
+/* Product Info */
+.prodInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 25px;
+    /* gap: 8px; */
+    /* margin-top: 24px; */
+}
+
+/* Item Name */
+.itmName {
+    height: 23px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.itmName:hover {
+    color: #2874f0;
+}
+
+/* Rating Pill */
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 2px 2px 4px;
+    background: #508C47;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* rating number  */
+.ratingNo {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Star icon */
+.starIcon {
+    width: 14px;
+    height: 14px;
+    margin-bottom: 2px;
+}
+
+/* Reviews & Ratings */
+.reviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    height: 18px;
+    margin-top: 17px;
+}
+
+/* Rating count */
+.ratingCount {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* product features  */
+.features {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding-inline-start: 16px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* Pricing Info */
+.pricingInfo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    /* margin-top: 46px;  */
+}
+
+/* original price  */
+.mrp {
+    line-height: 14px;
+    color: grey;
+}
+
+/* Sale Price */
+.salePrice {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Delivery Info */
+.delInfo {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+/* Exchange Info */
+.excgInfo {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+/* Offers Info */
+.offers {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #508C47;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
+
+/* Discount */
+.discount {
+    font-size: 12px;
+    line-height: 14px;
+    color: #508C47;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* add to cart and compare checkboxes */
+.checkbox {
+    margin-top: 5px;
+    margin-left: 32px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    width: max-content;
+}
+
+/* Main footer div  */
+.mainFtr {
+    background: #1A2335;
+}
+
+/* Footer */
+.footer {
+    font-family: Roboto, Arial, sans-serif;
+    font-style: normal;
+    margin-left: 65px;
+    margin-right: 35px;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #1A2335;
+}
+
+/* footer headers  */
+.ftrTitle {
+    letter-spacing: 0;
+    line-height: 1.4;
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* footer sections  */
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    width: 100%;
+}
+
+/* last two footer sections  */
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+    width: 100%;
+    line-height: 1.4;
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #fff;
+    padding: 0 25px;
+    height: 100%;
+}
+
+/* sec1 item layout */
+.layout {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* sec2 item layout  */
+.layoutAddr {
+    text-align: left;
+    letter-spacing: 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+.setColor {
+    color: #3D72E8 !important;
+}
+
+/* bottom footer columns  */
+.footerBtm {
+    position: relative;
+    height: max-content;
+    left: 0px;
+    display: flex;
+    background: #1A2335;
+    border-top: 1px solid #454d5e;
+    padding: 25px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+/* bottom footer items */
+.ftr_itm {
+    color: #878787;
+    height: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* bottom footer item layout */
+.layoutBtm {
+    height: max-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+/* Compare div  */
+.compareDiv {
+    right: 8px;
+    bottom: 8px;
+    position: fixed;
+    color: #3F72E9;
+    padding-bottom: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #f0f0f0;
+}
+
+.imageDiv {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 35px;
+}
+
+.imageComboDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.cancel_img {
+    font-size: 222px;
+    color: #d00;
+    font-weight: bold;
+    font-family: helvetica, arial;
+    line-height: 1;
+}
+
+.cancelImgDiv {
+    margin-top: 8px;
+}
+
+.close {
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 107px;
+    width: 30px;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #878787;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0;
+}
+
+.close:hover {
+    opacity: 1;
+    color: #000000;
+}
+
+.close:before,
+.close:after {
+    position: relative;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.childDiv {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 24px;
+    flex-direction: column;
+}
+
+.btnDiv {
+    display: flex;
+    flex-direction: row;
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    right: auto;
+    position: relative;
+    justify-content: right;
+}
+
+.cmpButton {
+    background-color: #2874f0;
+    transition: background-color .2s ease-in;
+    border-radius: 2px;
+    color: #f0f0f0;
+    border: none;
+    float: right;
+    position: absolute;
+    display: block;
+    margin-top: 12px;
+    bottom: 8px;
+    right: 8px;
+    cursor: pointer;
+    height: 40px;
+    width: 144px;
+    text-decoration: none;
+}
+
+/* .compareDiv > div {
+    display: none;
+    padding: 0;
+    margin: 0;
+} */
+
+/* #compareDiv > div:target {
+    display: block;
+}
+
+#compareDiv > div[compareBtn]:target {
+    content: attr(id);
+} */
+
+.cmpButton:hover .compareDiv {
+    display: block;
+}
+
+.cmpText {
+    color: #f0f0f0;
+    padding-left: 24px;
+    line-height: 2.5;
+}
+
+.numOfProducts {
+    margin-left: 12px;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 2px;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+.remButton {
+    float: right;
+    color: #212121;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    margin-right: 160px ;
+}
+
+.btmName {
+    font-size: 12px;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    color: #212121;
+    width: 100px;
+}
+
+.btmImg {
+    height: 125px;
+    opacity: 1;
+}
